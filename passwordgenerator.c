@@ -13,8 +13,7 @@ int main()
 	'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q',
 	'r','s','t','u','v','w','x','y','z',
 	'0','1','2','3','4','5','6','7','8','9',
-	'~','!','@','#','$','%','^','&','*','(',')','[',']','{','}',':',';','<',
-	'>','?','/',','};
+	'!','@','#','$','%','^','&','*'};
 	
 	printf("\nEnter length of password : ");
 	scanf("%d",&n); //suppose 12 character password
@@ -24,11 +23,12 @@ int main()
 	srand(time(NULL));
 	for(i=0;i<n;i++)
 	{
-		r = rand()%84;
+		r = rand()%70;
 		str[i] = ch[r]; //store Rth character in our string
 	}
 	
 	printf("\nGenerated password is : %s",str);
+	printf("\n");
 	
 	system("pause");
 		
